@@ -1,6 +1,6 @@
 {
-  "title": "Intro",
-  "description": "Make a K8s node use gVisor and create a RuntimeClass",
+  "title": "Introduction to gVisor",
+  "description": "Make the node use gVisor and create a RuntimeClass",
   "details": {
     "steps": [
       {
@@ -28,8 +28,7 @@
         {"file": "init.sh", "target": "/ks", "chmod": "+x"},
         {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
         {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"},
-        {"file": "gvisor-install.sh", "target": "/root", "chmod": "+x"},
-        {"file": "solution.sh", "target": "/var/run/kc-internal", "chmod": "+x"}
+        {"file": "gvisor-install.sh", "target": "/root", "chmod": "+x"}
       ]
     }
   },

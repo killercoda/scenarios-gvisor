@@ -17,7 +17,7 @@ sudo apt-get install -y \
 (
   set -e
   ARCH=$(uname -m)
-  URL=https://storage.googleapis.com/gvisor/releases/release/20210806/${ARCH}
+  URL=https://storage.googleapis.com/gvisor/releases/release/20230925/${ARCH}
   # URL=https://storage.googleapis.com/gvisor/releases/release/latest/${ARCH} # TRY THIS URL INSTEAD IF THE SCRIPT DOESNT WORK FOR YOU
   wget ${URL}/runsc ${URL}/runsc.sha512 \
     ${URL}/containerd-shim-runsc-v1 ${URL}/containerd-shim-runsc-v1.sha512

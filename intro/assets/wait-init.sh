@@ -6,6 +6,12 @@ rm $0
 
 clear
 
+echo "#########################";
+echo "##                     ##";
+echo "##   $ Killer Shell    ##";
+echo "##                     ##";
+echo "#########################";
+
 echo -n "Initialising Kubernetes..."
 while [ ! -f /ks/.k8sfinished ]; do
     echo -n '.'

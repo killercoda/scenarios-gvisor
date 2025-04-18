@@ -13,13 +13,6 @@ scp gvisor-install.sh node01:/root
 ssh node01
     sh gvisor-install.sh
     service kubelet status
-```{{exec}}
-
-<br>
-
-Now head back to the controlplane node
 ```
-exit
-```{{exec}}
 
 </details>

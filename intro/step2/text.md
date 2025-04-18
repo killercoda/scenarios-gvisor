@@ -25,14 +25,12 @@ The handler for the gVisor *RuntimeClass* is `runsc`.
 First we create the *RuntimeClass*
 
 ```yaml
-kubectl apply -f - <<EOF
 apiVersion: node.k8s.io/v1
 kind: RuntimeClass
 metadata:
   name: gvisor
 handler: runsc
-EOF
-```{{exec}}
+```
 
 <br>
 
@@ -41,7 +39,6 @@ And the *Pod* that uses it
 <br>
 
 ```yaml
-kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod
 metadata:
@@ -53,8 +50,7 @@ spec:
       name: sec
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-EOF
-```{{exec}}
+```
 
 </details>
 
@@ -67,6 +63,6 @@ EOF
 
 ```
 k exec sec -- dmesg | grep -i gvisor
-```{{exec}}
+```
 
 </details>
